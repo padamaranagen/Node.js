@@ -34,20 +34,20 @@ length - This is the number of bytes to write. Defaults to buffer.length
 
 encoding - Encoding to use. 'utf8' is the default encoding
 
-'Return Value
+Return Value
 This method returns number of octets written. 
-If there is not enough space in the buffer to fit the entire string, it will write a part of the string.'
---
+If there is not enough space in the buffer to fit the entire string, it will write a part of the string.
+
 Example
 var buffer = new Buffer(256);
 len = buffer.write("Welcome to NodeJS Programming!")
 console.log("Lenght is:" + len); //Output Length is : 30
---
+
 When above program is executed, it produces following result:
---
+
 C:\nodejs-world\buffers>node 1.writing-to-buffers.js
 Lenght is:30
---
+
 
 # Reading from Buffers
 
