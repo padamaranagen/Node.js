@@ -66,16 +66,16 @@ end - End index to end reading, defaults is complete buffer.
 Return Value
 This method decodes and returns a string from buffer data encoded using the specified character set encoding.
 
-Example
-buf = new Buffer(26);
-for (var i = 0 ; i < 26 ; i++) {
-  buf[i] = i + 97;
-}
+Example </br>
+buf = new Buffer(26);</br>
+for (var i = 0 ; i < 26 ; i++) </br>
+  buf[i] = i + 97;</br>
+}</br>
 
-console.log( buf.toString('ascii'));       // outputs: abcdefghijklmnopqrstuvwxyz
-console.log( buf.toString('ascii',0,5));   // outputs: abcde
-console.log( buf.toString('utf8',0,5));    // outputs: abcde
-console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outputs abcde
+console.log( buf.toString('ascii'));       // outputs: abcdefghijklmnopqrstuvwxyz </br>
+console.log( buf.toString('ascii',0,5));   // outputs: abcde </br>
+console.log( buf.toString('utf8',0,5));    // outputs: abcde </br>
+console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outputs abcde </br>
 
 # Convert Buffer to JSON
 Following is the syntax of the method to convert a Node Buffer into JSON object:
