@@ -26,7 +26,7 @@ Create a text file named input.txt having following content
 
 Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.
 
-Create a js file named main.js which has the following code:
+Create a js file named 1. read-from-stream.js which has the following code:
 
 var fs = require("fs");</br>
 var data = '';</br>
@@ -52,7 +52,7 @@ readerStream.on('error', function(err){</br>
 
 console.log("Program Ended");</br>
 
-Now run the main.js to see the result:
+Now run the 1. read-from-stream.js to see the result:
 
 C:\nodejs-world\streams>node "1. read-from-stream.js"
 
@@ -65,4 +65,43 @@ ons like video streaming sites, single-page applications, and other web applicat
 ions. Node.js is open source, completely free, and used by thousands of develope
 rs around the world.
 
--
+# Writing to stream
+
+Now run the 2. writing-to-stream.js to see the result:
+
+Create a js file named 2. writing-to-stream.js which has the following code:
+
+var fs = require("fs");
+var data = 'Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome JavaScript V8 Engine.';
+
+// Create a writable stream
+var writerStream = fs.createWriteStream('output.txt');
+
+// Write the data to stream with encoding to be utf8
+writerStream.write(data, 'UTF8');
+
+// Mark the end of file
+writerStream.end();
+
+// Handle stream events --> finish, and error
+writerStream.on('finish', function () {
+	console.log("Write completed.");
+});
+
+writerStream.on('error', function (err) {
+	console.log(err.stack);
+});
+
+console.log("Program Ended");
+Now run the 2. writing-to-stream.js to see the result:
+
+C:\nodejs-world\streams>node "2. writing-to-stream.js"
+
+Verify the Output
+
+Program Ended
+Write completed.
+
+Now open output.txt created in your current directory and verify the following content available in output.txt file.
+
+Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome JavaScript V8 Engine.
