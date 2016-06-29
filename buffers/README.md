@@ -1,5 +1,7 @@
 # NodeJs-Buffers
+----------------
 
+------------------------------------------------------------------------------------------------
 Buffer class is a global class and can be accessed in application without importing buffer module.
 
 * Method 1
@@ -16,8 +18,8 @@ var buf = new Buffer([10, 20, 30, 40, 50]);
 Following is the syntax to create a Buffer from a given string and optionally encoding type:
 
 var buf = new Buffer("Simply Easy Learning", "utf-8");
-
-* Writing to Buffers
+-------------------------------------------------------------------------------------------------
+# Writing to Buffers
 Syntax
 Following is the syntax of the method to write into a Node Buffer:
 
@@ -34,7 +36,8 @@ length - This is the number of bytes to write. Defaults to buffer.length
 encoding - Encoding to use. 'utf8' is the default encoding
 
 Return Value
-This method returns number of octets written. If there is not enough space in the buffer to fit the entire string, it will write a part of the string.
+This method returns number of octets written. 
+If there is not enough space in the buffer to fit the entire string, it will write a part of the string.
 --
 Example
 var buffer = new Buffer(256);
@@ -47,7 +50,7 @@ C:\nodejs-world\buffers>node 1.writing-to-buffers.js
 Lenght is:30
 --
 
-* Reading from Buffers
+# Reading from Buffers
 
 Syntax
 Following is the syntax of the method to read data from a Node Buffer:
@@ -76,7 +79,7 @@ console.log( buf.toString('ascii',0,5));   // outputs: abcde
 console.log( buf.toString('utf8',0,5));    // outputs: abcde
 console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outputs abcde
 
-* Convert Buffer to JSON
+# Convert Buffer to JSON
 Syntax
 Following is the syntax of the method to convert a Node Buffer into JSON object:
 
@@ -116,7 +119,7 @@ When above program is executed, it produces following result:
 
 buffer3 content: TutorialsPoint Simply Easy Learning
 
-* Compare Buffers
+# Compare Buffers
 Syntax
 Following is the syntax of the method to compare two Node buffers:
 
@@ -144,8 +147,9 @@ if(result < 0) {
 When above program is executed, it produces following result:
 
 ABC comes before ABCD
+---
 
-* Copy Buffer
+# Copy Buffer
 Syntax
 Following is the syntax of the method to copy a node buffer:
 
@@ -171,9 +175,10 @@ var buffer2 = new Buffer(3);
 buffer1.copy(buffer2);
 console.log("buffer2 content: " + buffer2.toString());
 When above program is executed, it produces following result:
-
 buffer2 content: ABC
-* Slice Buffer
+---
+
+# Slice Buffer
 Syntax
 Following is the syntax of the method to get a sub-buffer of a node buffer:
 
@@ -194,8 +199,8 @@ var buffer1 = new Buffer('TutorialsPoint');
 var buffer2 = buffer1.slice(0,9);
 console.log("buffer2 content: " + buffer2.toString());
 When above program is executed, it produces following result:
-
 buffer2 content: Tutorials
+
 Buffer Length
 Syntax
 Following is the syntax of the method to get a size of a node buffer in bytes:
@@ -211,3 +216,4 @@ console.log("buffer length: " + buffer.length);
 When above program is executed, it produces following result:
 
 buffer length: 14
+---
