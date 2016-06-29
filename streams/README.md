@@ -23,12 +23,11 @@ Each type of Stream is an EventEmitter instance and throws several events at dif
 # Reading from stream
 
 Create a text file named input.txt having following content
--
+
 Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.
--
 
 Create a js file named main.js which has the following code:
--
+
 var fs = require("fs");
 var data = '';
 
@@ -52,13 +51,13 @@ readerStream.on('error', function(err){
 });
 
 console.log("Program Ended");
--
+
 Now run the main.js to see the result:
--
+
 C:\nodejs-world\streams>node "1. read-from-stream.js"
--
+
 Verify the Output
--
+
 Program Ended
 ?Node.js is a very powerful JavaScript-based framework/platform built on Google
 Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applicati
