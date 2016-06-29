@@ -28,29 +28,29 @@ Node.js is a very powerful JavaScript-based framework/platform built on Google C
 
 Create a js file named main.js which has the following code:
 
-var fs = require("fs");
-var data = '';
+var fs = require("fs");</br>
+var data = '';</br>
 
-// Create a readable stream
-var readerStream = fs.createReadStream('input.txt');
+// Create a readable stream</br>
+var readerStream = fs.createReadStream('input.txt');</br>
 
-// Set the encoding to be utf8. 
-readerStream.setEncoding('UTF8');
+// Set the encoding to be utf8. </br>
+readerStream.setEncoding('UTF8');</br>
 
-// Handle stream events --> data, end, and error
-readerStream.on('data', function(chunk) {
-   data += chunk;
-});
+// Handle stream events --> data, end, and error</br>
+readerStream.on('data', function(chunk) {</br>
+   data += chunk;</br>
+});</br>
 
-readerStream.on('end',function(){
-   console.log(data);
-});
+readerStream.on('end',function(){</br>
+   console.log(data);</br>
+});</br>
 
-readerStream.on('error', function(err){
-   console.log(err.stack);
-});
+readerStream.on('error', function(err){</br>
+   console.log(err.stack);</br>
+});</br>
 
-console.log("Program Ended");
+console.log("Program Ended");</br>
 
 Now run the main.js to see the result:
 
