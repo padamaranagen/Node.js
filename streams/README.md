@@ -71,28 +71,28 @@ Now run the 2. writing-to-stream.js to see the result:
 
 Create a js file named 2. writing-to-stream.js which has the following code:
 
-var fs = require("fs");
-var data = 'Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome JavaScript V8 Engine.';
+var fs = require("fs");</br>
+var data = 'Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome JavaScript V8 Engine.';</br>
 
-// Create a writable stream
-var writerStream = fs.createWriteStream('output.txt');
+// Create a writable stream</br>
+var writerStream = fs.createWriteStream('output.txt');</br>
 
-// Write the data to stream with encoding to be utf8
-writerStream.write(data, 'UTF8');
+// Write the data to stream with encoding to be utf8</br>
+writerStream.write(data, 'UTF8');</br>
 
-// Mark the end of file
-writerStream.end();
+// Mark the end of file</br>
+writerStream.end();</br>
 
-// Handle stream events --> finish, and error
-writerStream.on('finish', function () {
-	console.log("Write completed.");
-});
+// Handle stream events --> finish, and error</br>
+writerStream.on('finish', function () {</br>
+	console.log("Write completed.");</br>
+});</br>
 
-writerStream.on('error', function (err) {
-	console.log(err.stack);
-});
+writerStream.on('error', function (err) {</br>
+	console.log(err.stack);</br>
+});</br>
 
-console.log("Program Ended");
+console.log("Program Ended");</br>
 Now run the 2. writing-to-stream.js to see the result:
 
 C:\nodejs-world\streams>node "2. writing-to-stream.js"
@@ -105,3 +105,33 @@ Write completed.
 Now open output.txt created in your current directory and verify the following content available in output.txt file.
 
 Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome JavaScript V8 Engine.
+
+# Piping streams
+
+Piping is a mechanism where we provide output of one stream as the input to another stream. It is normally used to get data from one stream and to pass output of that stream to another stream. There is no limit on piping operations. Now we'll show a piping example for reading from one file and writing it to another file.
+
+Create a js file named "3.piping-streams.js" which has the following code:
+
+var fs = require("fs"); </br>
+
+// Create a readable stream</br>
+var readerStream = fs.createReadStream('input.txt');</br>
+
+// Create a writable stream</br>
+var writerStream = fs.createWriteStream('output.txt');</br>
+
+// Pipe the read and write operations</br>
+// read input.txt and write data to output.txt</br>
+readerStream.pipe(writerStream);</br>
+
+console.log("Program Ended");</br>
+
+Now run the 3.piping-streams.js to see the result:
+C:\nodejs-world\streams>node 3.piping-streams.js
+
+Verify the Output
+Program Ended
+
+Open output.txt created in your current directory and verify the following content available in output.txt file.
+
+Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.
