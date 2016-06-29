@@ -19,7 +19,7 @@ var buf = new Buffer("Simply Easy Learning", "utf-8");
 
 
 # Writing to Buffers
-Syntax
+
 Following is the syntax of the method to write into a Node Buffer:
 
 buf.write(string[, offset][, length][, encoding])
@@ -34,9 +34,9 @@ length - This is the number of bytes to write. Defaults to buffer.length
 
 encoding - Encoding to use. 'utf8' is the default encoding
 
-Return Value
+'Return Value
 This method returns number of octets written. 
-If there is not enough space in the buffer to fit the entire string, it will write a part of the string.
+If there is not enough space in the buffer to fit the entire string, it will write a part of the string.'
 --
 Example
 var buffer = new Buffer(256);
@@ -51,7 +51,6 @@ Lenght is:30
 
 # Reading from Buffers
 
-Syntax
 Following is the syntax of the method to read data from a Node Buffer:
 
 buf.toString([encoding][, start][, end])
@@ -80,7 +79,6 @@ console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outpu
 
 # Convert Buffer to JSON
 Following is the syntax of the method to convert a Node Buffer into JSON object:
-
 buf.toJSON()
 Return Value
 This method returns a JSON-representation of the Buffer instance.
@@ -118,7 +116,6 @@ When above program is executed, it produces following result:
 buffer3 content: TutorialsPoint Simply Easy Learning
 
 # Compare Buffers
-Syntax
 Following is the syntax of the method to compare two Node buffers:
 
 buf.compare(otherBuffer);
@@ -177,7 +174,7 @@ buffer2 content: ABC
 
 
 # Slice Buffer
-Syntax
+
 Following is the syntax of the method to get a sub-buffer of a node buffer:
 
 buf.slice([start][, end])
