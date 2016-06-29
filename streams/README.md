@@ -135,3 +135,40 @@ Program Ended
 Open output.txt created in your current directory and verify the following content available in output.txt file.
 
 Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.
+
+
+# Chaining streams
+
+Chanining is a mechanism to connect output of one stream to another stream and create a chain of multiple stream operations. It is normally used with piping operations. Now we'll use the piping and chaining to first compress a file and then decompress the same.
+
+Create a js file named "4.chaining-streams" which has the following code:
+
+var fs = require("fs");</br>
+var zlib = require('zlib');</br>
+
+// Compress the file input.txt to input.txt.gz</br>
+fs.createReadStream('input.txt')</br>
+  .pipe(zlib.createGzip())</br>
+  .pipe(fs.createWriteStream('input.txt.gz'));</br>
+
+console.log("File Compressed.");</br>
+
+
+var fs = require("fs");</br>
+var zlib = require('zlib');</br>
+
+// Decompress the file input.txt.gz to input.txt</br>
+fs.createReadStream('input.txt.gz')</br>
+  .pipe(zlib.createGunzip())</br>
+  .pipe(fs.createWriteStream('input.txt'));</br>
+
+console.log("File Decompressed.");</br>
+
+Now run the main.js to see the result:
+C:\nodejs-world\streams>node 4.chaining-streams.js
+
+Verify the Output
+File Compressed.
+File Decompressed.
+
+You will find that input.txt file has been compressed and it created a file input.txt.gz in the current directory. Now let's try to decompress the same file using the following code.
