@@ -1,7 +1,5 @@
 # NodeJs-Buffers
-----------------
 
-------------------------------------------------------------------------------------------------
 Buffer class is a global class and can be accessed in application without importing buffer module.
 
 * Method 1
@@ -18,7 +16,8 @@ var buf = new Buffer([10, 20, 30, 40, 50]);
 Following is the syntax to create a Buffer from a given string and optionally encoding type:
 
 var buf = new Buffer("Simply Easy Learning", "utf-8");
--------------------------------------------------------------------------------------------------
+
+
 # Writing to Buffers
 Syntax
 Following is the syntax of the method to write into a Node Buffer:
@@ -80,7 +79,6 @@ console.log( buf.toString('utf8',0,5));    // outputs: abcde
 console.log( buf.toString(undefined,0,5)); // encoding defaults to 'utf8', outputs abcde
 
 # Convert Buffer to JSON
-Syntax
 Following is the syntax of the method to convert a Node Buffer into JSON object:
 
 buf.toJSON()
@@ -147,10 +145,10 @@ if(result < 0) {
 When above program is executed, it produces following result:
 
 ABC comes before ABCD
----
+
 
 # Copy Buffer
-Syntax
+
 Following is the syntax of the method to copy a node buffer:
 
 buf.copy(targetBuffer[, targetStart][, sourceStart][, sourceEnd])
@@ -176,7 +174,7 @@ buffer1.copy(buffer2);
 console.log("buffer2 content: " + buffer2.toString());
 When above program is executed, it produces following result:
 buffer2 content: ABC
----
+
 
 # Slice Buffer
 Syntax
@@ -216,4 +214,3 @@ console.log("buffer length: " + buffer.length);
 When above program is executed, it produces following result:
 
 buffer length: 14
----
