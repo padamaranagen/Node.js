@@ -66,8 +66,8 @@ C - Both of the above.
 
 D - None of the above.
 
-Answer : A
-Explaination
+Answer : A </br>
+Explaination</br>
 The __dirname represents the name of the directory that the currently executing script resides in.
 
 #### 6 - Which of the following module is required for operating system specific operations?
@@ -80,8 +80,8 @@ C - net module
 
 D - None of the above.
 
-Answer : A
-Explaination
+Answer : A</br>
+Explaination</br>
 Node.js os module provides a few basic operating-system related utility functions.
 
 #### 7 - Which of the following is the correct way to get a normalized path?
@@ -94,8 +94,8 @@ C - os.normalize('/test/test1//2slashes/1slash/tab/..')
 
 D - None of the above.
 
-Answer : A
-Explaination
+Answer : A</br>
+Explaination</br>
 path.normalize(p) normalizes a string path, taking care of '..' and '.' parts.
 
 #### 8 - net.isIP(input) returns 0 for invalid input.
@@ -104,8 +104,8 @@ A - true
 
 B - false
 
-Answer : A
-Explaination
+Answer : A</br>
+Explaination</br>
 net.isIP(input) tests if input is an IP address. Returns 0 for invalid strings, returns 4 for IP version 4 addresses, and returns 6 for IP version 6 addresses.
 
 #### 9 - Which of the following code can create a web server?
@@ -118,8 +118,8 @@ C - http.createHTTPServer(callback)
 
 D - None of the above.
 
-Answer : A
-Explaination
+Answer : A</br>
+Explaination</br>
 http.createServer(callback) method can be used to create a web server.
 
 #### 10 - Which of the following is true about RESTful webservices?
@@ -132,6 +132,6 @@ C - Both of the above.
 
 D - None of the above.
 
-Answer : C
-Explaination
+Answer : C</br>
+Explaination</br>
 Webservices based on REST Architecture are known as RESTful web services. These webservices uses HTTP methods to implement the concept of REST architecture.
