@@ -23,3 +23,7 @@ B - $ npm ls
 C - $ node ls -g
 
 D - $ node ls
+
+Answer : B
+Explaination
+Executing $ npm ls command will show all the modules installed locally.
