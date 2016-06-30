@@ -263,3 +263,140 @@ B - false
 Answer : A </br>
 Explaination </br>
 Transform stream is a duplex stream where the output is computed based on input.
+
+
+#### 21 REPL stands for.
+
+A - Research Eval Program Learn
+
+B - Read Eval Print Loop
+
+C - Read Earn Point Learn
+
+D - Read Eval Point Loop
+
+Answer : B </br>
+Explaination </br>
+REPL stands for Read Eval Print Loop and it represents a computer environment like a window console or Unix/Linux shell where a command is entered and system responds with an output in interactive mode.
+
+#### 22 - What is Callback?
+
+A - Callback is an asynchronous equivalent for a function.
+
+B - Callback is a technique in which a method call back the caller method.
+
+C - Both of the above.
+
+D - None of the above.
+
+Answer : A </br>
+Explaination </br>
+Callback is an asynchronous equivalent for a function.
+
+#### 23 - Which of the following is true about writable stream?
+
+A - writable stream is used for write operation.
+
+B - Output of readable stream can be input to a writable stream.
+
+C - Both of the above.
+
+D - None of the above.
+
+Answer : C </br> 
+Explaination </br>
+Writable stream is used for write operation and it can take output of readable stream as input.
+
+#### 24 - Which of the following is true about Chaining streams?
+
+A - Chanining is a mechanism to connect output of one stream to another stream and create a chain of multiple stream operations.
+
+B - Chanining is normally used with piping operations.
+
+C - Both of the above.
+
+D - None of the above.
+
+Answer : C </br>
+Explaination </br>
+Chanining is a mechanism to connect output of one stream to another stream and create a chain of multiple stream operations. It is normally used with piping operations.
+
+#### 25 - Which method of fs module is used to delete a file?
+
+A - fs.delete(fd, len, callback)
+
+B - fs.remove(fd, len, callback)
+
+C - fs.unlink(path, callback)
+
+D - None of the above. 
+
+Answer : C </br>
+Explaination </br>
+fs.unlink(path, callback) is the method which is used to delete a file.
+
+#### 26 - Which of the following code print the endianness of operating system?
+
+A - console.log('endianness : ' + os.endianness);
+
+B - console.log('endianness : ' + os.endianness());
+
+C - console.log('endianness : ' + os.getEndianness());
+
+D - None of the above.
+
+Answer : B </br>
+Explaination </br>
+os.endianness() returns the endianness of the CPU. Possible values are "BE" or "LE".
+
+#### 27 - Which of the following module is required for path specific operations?
+
+A - os module
+
+B - fs module
+
+C - path module
+
+D - None of the above.
+
+Answer : C </br>
+Explaination </br>
+Node.js path module is used for handling and transforming file paths.
+
+#### 28 - Which of the following is true about internal binding with respect to domain module?
+
+A - Error emmitter is executing its code within run method of a domain.
+
+B - Error emmitter is added explicitly to a domain using its add method.
+
+C - Both of the above.
+
+D - None of the above.
+
+Answer : A </br>
+Explaination </br>
+Error emmitter is executing its code within run method of a domain in case of internal binding.
+
+#### 29 - Which of the following is true about fork methd of child_process module.
+
+A - The fork() method method is a special case of the spawn() to create Node processes.
+
+B - The fork method returns object with a built-in communication channel in addition to having all the methods in a normal ChildProcess instance.
+
+C - Both of the above.
+
+D - None of the above.
+
+Answer : C </br>
+Explaination </br>
+The fork() method method is a special case of the spawn() to create Node processes. It returns object with a built-in communication channel in addition to having all the methods in a normal ChildProcess instance.
+
+#### 30 - A stream fires end event when there is no more data to read.
+
+A - true
+
+B - false
+
+Answer : A </br>
+Explaination </br>
+A stream fires end event when there is no more data to read.
