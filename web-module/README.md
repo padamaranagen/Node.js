@@ -65,15 +65,15 @@ console.log('Server running at http://localhost:3000/');</br>
 
 index.html</br>
 
-<!DOCTYPE html></br>
-<html xmlns="http://www.w3.org/1999/xhtml"></br>
-<head></br>
-    <title></title></br>
-</head></br>
-<body></br>
-    Welcome to NodeJS World!!</br>
-</body></br>
-</html></br>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Welcome to NodeJS World!!
+</body>
+</html>
 
 
 Now let us run the create-webserver-using-node.js to see the result:
@@ -131,15 +131,15 @@ Now run the create-webclient-using-node.js from a different command terminal oth
 Verify the Output at client end.
 
 C:\nodejs-world\web-module>node create-webclient-using-node.js</br>
-?<!DOCTYPE html></br>
-<html xmlns="http://www.w3.org/1999/xhtml"></br>
-<head></br>
-    <title></title></br>
-</head></br>
-<body></br>
-    Welcome to NodeJS World!!</br>
-</body></br>
-</html></br>
+?<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Welcome to NodeJS World!!
+</body>
+</html>
 
 Verify the Output at server end.
 
