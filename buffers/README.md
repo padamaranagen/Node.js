@@ -65,7 +65,7 @@ Here is the description of the parameters used:
 Return Value
 This method decodes and returns a string from buffer data encoded using the specified character set encoding.
 
-Example </br>
+Example:: </br>
 var buf = new Buffer(26);<br>
 for (var i = 0 ; i < 26 ; i++)</br>
 {</br>
