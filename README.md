@@ -1,16 +1,21 @@
-# NodeJS Question and Answers
+### NodeJS 
 
-## 1 - What is Node.JS?
-`
-A - Node.js is a web server.
+1. Introduction
+2. Environment Setup
+3. First Application
+4. REPL Terminal
+5. Package Manager (NPM)
+6. Callbacks concept
+7. Event Loop
+8. Event Emitter
+9. Buffers
+10. Streams
+11. File System
+12. Global Objects
+13. Utility Modules
+14. Web Module
+15. Express Framework
+16. Restful API
+17. Scaling Application
+18. Packaing
 
-B - Node.js is a JavaScript based framework/platform built on Google Chrome's JavaScript V8 Engine.
-
-C - Node.js is a java based framework.
-
-D - None of the above.
-
-Answer : B
-Explaination
-Node.js is a JavaScript based framework/platform built on Google Chrome's JavaScript V8 Engine.
-`
