@@ -1,4 +1,4 @@
-# NodeJs-Buffers
+### Buffers
 
 Buffer class is a global class and can be accessed in application without importing buffer module.
 

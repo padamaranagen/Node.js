@@ -1,4 +1,4 @@
-# Streams
+### Streams
 
 Streams are objects that let you read data from a source or write data to a destination in continous fashion. In Node.js, there are four types of streams.
 
